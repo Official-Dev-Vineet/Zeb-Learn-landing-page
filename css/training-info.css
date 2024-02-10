@@ -1,0 +1,80 @@
+.training-info {
+  padding: 5rem 1rem;
+  background-image: url(../assets/new-update/video-bg1.webp);
+  background-size: cover;
+}
+.training-info .group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  color: var(--white);
+}
+.training-info .group .text-wrapper h5 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+.training-info .group .text-wrapper h2 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  line-height: 1.2;
+  margin-block: 1rem;
+}
+.training-info .group .text-wrapper ul {
+  margin-block: 1rem;
+  list-style: initial;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.training-info .group .text-wrapper ul li {
+  list-style: initial;
+  font-size: 1.1em;
+}
+.training-info .group .text-wrapper ul li::marker {
+  color: var(--yellow);
+}
+
+.training-info .group .text-wrapper .btn {
+  margin-top: 1rem;
+  background-color: var(--yellow);
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1.1em;
+  border-radius: 0.3rem;
+}
+.training-info .image-wrapper .text-wrap {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(250, 250, 250, 0.786);
+  color: var(--dark);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.training-info .image-wrapper .text-wrap .icon {
+  background-color: var(--yellow);
+  padding: 0.4rem;
+  border-radius: 50%;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+@media screen and (max-width: 850px) {
+  .training-info .group {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .training-info .image-wrapper .text-wrap .icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+  }
+}

@@ -1,0 +1,34 @@
+.our-partner {
+  padding: 5rem 1rem;
+}
+.our-partner .title {
+  color: #20394f;
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
+}
+.our-partner .title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #7cdae2;
+  width: 6rem;
+  margin: 0 auto;
+}
+.our-partner .image-container {
+  max-width: 1000px;
+  display: grid;
+  margin: 4rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+.our-partner .image-container img {
+  width: 8rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}

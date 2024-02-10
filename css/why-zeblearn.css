@@ -1,0 +1,111 @@
+.why-zeblearn {
+    padding:1rem;
+}
+.why-zeblearn .title {
+  color: #20394f;
+  padding: 2rem 0;
+  position: relative;
+}
+.why-zeblearn .title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #7cdae2;
+  width: 6rem;
+  margin:0 auto;
+}
+.why-zeblearn .image-wrapper{
+    max-width: 950px;
+    margin-top: clamp(2rem, 5vw, 5rem);
+}
+
+/*  model styling  */
+
+.why-zeblearn .model{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display:none;
+    place-items: center;
+    z-index: 999;
+}
+.why-zeblearn .model > .form{
+    max-width: 800px;
+    background-color:var(--white);
+    padding-bottom: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+.why-zeblearn .model .form .form-header{
+    background-color:var(--purple);
+    color: var(--white);
+    padding-left:1rem;
+    border-bottom:2px solid var(--purple);
+}
+.why-zeblearn .model .form .form-header h5{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.why-zeblearn .model .form .form-header span{
+    cursor: pointer;
+    padding: 1rem;
+}
+.why-zeblearn .model .form .form-header span:hover{
+    background-color: var(--white);
+    color: var(--purple);
+}
+.why-zeblearn .model .form .group{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.why-zeblearn .model .form .group .image-wrapper{
+    transform: translateY(-15%);
+}
+.why-zeblearn .model .form .group input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    outline: none;
+}
+.why-zeblearn .model .form .group .group{
+    grid-template-columns: 8rem 1fr;
+    width: 100%;
+    gap: 0.6rem;
+}
+.why-zeblearn .model .form .group select{
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+.why-zeblearn .model .form .group .btn{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+@media screen and (max-width:830px) {
+    .why-zeblearn .model .form .group{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .why-zeblearn .model .form .group .image-wrapper{
+        transform: translateY(0);
+        height: 200px;
+    }
+    .why-zeblearn .model .form .group .group{
+        grid-template-columns: 1fr;
+        padding: unset;
+    }
+}

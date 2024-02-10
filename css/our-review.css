@@ -1,0 +1,25 @@
+.our-reviews {
+  padding: 5rem 1rem;
+  background-color: #ebf1f8;
+}
+.our-reviews .title {
+  color: #20394f;
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
+}
+.our-reviews .title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  background-color: #7cdae2;
+  width: 8rem;
+  margin: 0 auto;
+}
+.our-reviews .image-wrapper{
+    max-width: 950px;
+    margin-top: clamp(2rem, 5vw, 5rem);
+}

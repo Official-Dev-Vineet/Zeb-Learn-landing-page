@@ -1,0 +1,57 @@
+.online-training {
+  padding: 5rem 1rem;
+  background-color: #172238;
+  color: var(--white);
+  background-image: url(../assets/new-update/contact-bg1.webp);
+  background-size: cover;
+}
+.online-training .title{
+    padding: 1rem;
+    text-transform: capitalize;
+    border:1px solid var(--white) ;
+    width: max-content;
+    font-size: clamp(1rem, 1.2vw, 1rem);
+    margin:0 auto ;
+    position: relative;
+}
+.online-training .title::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 5rem;
+    background-color: var(--white);
+    left: 50%;
+    bottom:100%;
+    transform: translateX(-50%);
+}
+.online-training .group {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+.online-training .list-wrapper {
+  columns: 250px auto;
+  column-gap: 3rem;
+ padding: 0 2rem;
+}
+.online-training .list-wrapper li,.online-training .group .list ul li{
+    font-size: 0.9em;
+    list-style: initial;
+}
+
+.online-training .list .title h2{
+    font-size:  clamp(1.1rem, 2vw, 1.4rem);
+}
+.online-training .group .list ul{
+    margin: 2rem;
+}
+@media  screen and (max-width:1200px) {
+    .online-training .group{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+   .online-training .group .list .title::after{
+    display: none;
+   }
+}

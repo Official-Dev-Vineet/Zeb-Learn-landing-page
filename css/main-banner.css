@@ -1,0 +1,106 @@
+/* main banner styling  */
+
+.main-banner {
+  background-image: url(../assets/new-update/SandT2.jpg);
+  background-size: cover;
+  min-height: 500px;
+}
+.main-banner .grid {
+  grid-template-columns: minmax(20rem, 1.2fr) 1fr 1fr;
+  gap: 2rem;
+}
+.main-banner .banner-text p,
+.main-banner .banner-text .rating {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+}
+.main-banner .banner-text .rating{
+  gap: 0.5rem;
+  font-size: clamp(0.7rem, 1.3vw, 1.3rem);
+}
+.main-banner .banner-text .btn {
+  background-color: var(--yellow);
+  font-weight: 600;
+}
+.banner-image {
+  max-height: 25rem;
+  height: 100%;
+}
+.banner-image img {
+  object-fit: fill;
+}
+.main-banner .connect-us .form-text {
+  font-size: clamp(1rem, 1.3vw, 5rem);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--white);
+  max-width: 22rem;
+}
+.main-banner .connect-us .form-area {
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.412);
+}
+.main-banner .connect-us .form-area input {
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+.main-banner .connect-us .form-area .group {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1rem;
+}
+.main-banner .connect-us .form-area .btn {
+  background-color: var(--indigo);
+  padding: 0.7rem;
+  color: var(--white);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  border-radius: 0.3rem;
+}
+.main-banner .btn-group {
+  margin-top: 2rem;
+  grid-column: 1/-1;
+}
+.main-banner .btn-group .btn {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: #014af9;
+  background-image: linear-gradient(
+    180deg,
+    rgba(13, 29, 144, 1) 26%,
+    rgba(1, 74, 249, 1) 95%
+  );
+}
+.main-banner .btn-group .btn:hover {
+  background: #014af9;
+}
+@media screen and (max-width:1200px) {
+    .main-banner .grid{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 6rem;
+    }
+    .main-banner .btn-group{
+        flex-direction: column;
+        max-width: 350px;
+        grid-column: unset;
+    }
+}
+@media screen and (max-width:850px) {
+    .main-banner .grid{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+    .main-banner .connect-us .form-area{
+        max-width: 100%;
+    }
+    .main-banner .btn-group{
+        margin:0 auto;
+        max-width: 500px ;
+        width: 100%;
+    }
+    .main-banner .btn-group .btn{
+        width: 100%;
+    }
+}
